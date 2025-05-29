@@ -1,9 +1,13 @@
-class Boardcase
-    attr_accessor :value, :id
-
-    def initialize(id)
+class BoardCase
+    attr_accessor :id, :value #:symbol
+    @@players = 0
+    def initialize(id, value)
         @id = id  # Ex: "A1"
-        @value = " " # " " vide ou symbol
+        # @symbol = "" # " " vide ou symbol
+        @value = value
+        @@players += 1
+
+        
     end
 
   end
