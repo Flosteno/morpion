@@ -14,6 +14,8 @@ The project consist of creating a terminal based tic-tac-toe game (morpion in fr
 
 ### BoardCase.rb
 
+### Game.rb
+
 ### Application.rb
 
 ## Credits
