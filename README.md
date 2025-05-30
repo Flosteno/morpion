@@ -2,7 +2,7 @@
 
 The project consist of creating a terminal based tic-tac-toe game (morpion in french) using classes 
 
-##Technologies
+## Technologies
 
 - ruby
 
