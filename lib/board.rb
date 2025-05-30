@@ -49,12 +49,12 @@ class Board
        maj_case = @grid[placement]
 
         if maj_case.nil?
-          puts "Case invalide. Essaie encore."
+          puts "\nCase invalide. Essaie encore."
         elsif maj_case.value != ""
-          puts "Case déjà prise !"
+          puts "\nCase déjà prise !"
         else
           maj_case.value = player.symbol
-          puts "#{player.name} a joué #{player.symbol} en #{placement}"
+          puts "\n#{player.name} a joué #{player.symbol} en #{placement}"
           valid = true
         end
       end

@@ -9,11 +9,11 @@ class Application
     puts "╚" + "═" * 48 + "╝"
 
     puts "⭕️ Joueur 1, choisis ton nom de Morpion Master :"
-    print ">>"
+    print ">> "
     player1=gets.chomp
     
     puts "❌ Joueur 2, choisis ton nom de Morpion Master :"
-    print ">>"
+    print ">> "
     player2=gets.chomp
    
     
