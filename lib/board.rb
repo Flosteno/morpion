@@ -25,11 +25,12 @@ class Board
 
   def screen
   
+    puts "  1 2 3"
     ["A", "B", "C"].each do |lettre|
       line = @grid.select { |id, case_obj| id.start_with?(lettre) }
-      print "#{lettre}"
+      print "#{lettre} "
       puts line.map { |_, case_obj| case_obj.value.empty? ? " " : case_obj.value }.join("|")
-      puts " _____________" unless lettre == "C"
+      puts " --+-+--" unless lettre == "C"
     end
   end
   
