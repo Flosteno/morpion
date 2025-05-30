@@ -17,7 +17,3 @@ The project consist of creating a terminal based tic-tac-toe game (morpion in fr
 ### Game.rb
 
 ### Application.rb
-
-## Credits
-
-- Mathieu (thanks for the gepeto mathematics)
