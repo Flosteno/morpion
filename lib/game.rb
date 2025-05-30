@@ -17,7 +17,6 @@ class Game
 
   def turn 
     @status = "en cours"
-    winner = " "
     
     while @status == "en cours"
       @plateau.screen
@@ -25,18 +24,19 @@ class Game
       @plateau.play_turn(@players[0])
       @status = @plateau.victory?(@players[0])
       if @status == "victory"
-        winner = @players[0]
-        return winner
-      elsif @status == "draw"
+        @current_player = @players[0]
+        break
+      elsif @status == "nul"
         return @status
       end
       
+      @plateau.screen
       @plateau.play_turn(@players[1])
       @status = @plateau.victory?(@players[1])
       if @status == "victory"
-        winner = @players[0]
-        return winner
-      elsif @status == "draw"
+        @current_player = @players[1]
+        break
+      elsif @status == "nul"
         return @status
       end
       
@@ -58,9 +58,11 @@ class Game
 
   def game_end
     if @status == "nul"
-      puts "Match nul"
-    else
-      puts "Victoire"
+      puts "Fin de partie"
+      puts "C'est un match nul"
+    elsif @status == "victory"
+      puts "Fin de partie"
+      puts "C'est une victoire de #{@current_player.name}"
     end
   end
 

@@ -30,7 +30,7 @@ class Application
       game.game_end
 
       puts "Voulez vous rejouer y/n?"
-      print ">>"
+      print ">> "
       choice = gets.chomp
 
 
